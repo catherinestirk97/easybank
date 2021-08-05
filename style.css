@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --light-grey: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
 * {
     margin:0;
     padding:0;
@@ -11,6 +25,11 @@ html,body {
     padding: 0px;
     overflow-x: hidden;
     font-size:16px;
+}
+
+body {
+    font-family: "Public Sans";
+    font-weight:400;
 }
 
 .mobile-container {
@@ -29,6 +48,16 @@ html,body {
 }
 
 .section-one {
+    height:90vh;
+    background-color: var(--light-grey);
+    position:relative;
+    z-index:-3;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:column;
+}
+
+.section-one__images {
     height:50vh;
     background: url(/images/bg-intro-mobile.svg);
     background-size:cover;
@@ -40,4 +69,41 @@ html,body {
 .phones {
     height:auto;
     width:100%;
+}
+
+.section-one__text {
+    margin-top:2rem;
+    text-align:center;
+    /* border:1px solid blue; */
+}
+
+.section-one__text h1 {
+    font-weight:300;
+    font-size: 2.1em;
+    color: var(--dark-blue);
+    padding: 5px 10px;
+    /* border:1px solid red; */
+}
+
+span {
+    display:block;
+}
+
+.section-one__text p {
+    margin-top:0.8rem;
+    font-size:1em;
+    line-height:1.5em;
+    padding: 5px 15px;
+    color: var(--grayish-blue);
+    /* border:1px solid black; */
+} 
+
+.section-one__text button {
+    margin-top:1rem;
+    padding: 12px 30px;
+    border-radius:15px;
+    border:none;
+    background-image: linear-gradient(to right, var(--lime-green) , var(--bright-cyan));
+    font-family: inherit;
+    color:white;
 }
