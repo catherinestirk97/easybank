@@ -30,6 +30,7 @@ html,body {
 body {
     font-family: "Public Sans";
     font-weight:400;
+    font-size:0.9em;
 }
 
 .mobile-container {
@@ -75,11 +76,12 @@ body {
     margin-top:2rem;
     text-align:center;
     /* border:1px solid blue; */
+    padding: 0 35px;
 }
 
 .section-one__text h1 {
     font-weight:300;
-    font-size: 2.1em;
+    font-size: 2.3em;
     color: var(--dark-blue);
     padding: 5px 10px;
     /* border:1px solid red; */
@@ -91,19 +93,75 @@ span {
 
 .section-one__text p {
     margin-top:0.8rem;
-    font-size:1em;
+    /* font-size:0.9em; */
     line-height:1.5em;
-    padding: 5px 15px;
+    padding: 5px 0px;
     color: var(--grayish-blue);
     /* border:1px solid black; */
 } 
 
 .section-one__text button {
-    margin-top:1rem;
+    margin-top:1.2rem;
     padding: 12px 30px;
     border-radius:15px;
     border:none;
     background-image: linear-gradient(to right, var(--lime-green) , var(--bright-cyan));
     font-family: inherit;
     color:white;
+}
+
+.section-two {
+    background-color: var(--light-grayish-blue);
+    text-align:center;
+    padding: 5px 35px;
+    padding-top:4rem;
+    color: var(--grayish-blue);
+    line-height:1.5em;
+}
+
+.section-two__intro h2 {
+    font-weight:400;
+    padding:0 30px;
+    padding-bottom:1rem;
+    font-size:1.9rem;
+    line-height:2.3rem;
+    color:var(--dark-blue);
+}
+
+.section-two__intro p {
+    padding-top:0.5rem;
+    padding-bottom:2rem;
+}
+
+.section-two__benefits {
+    display:flex;
+    flex-direction:column;
+}
+
+.section-two__benefit h3 {
+    color:var(--dark-blue);
+    font-weight: 400;
+    padding-bottom:1.3rem;
+}
+
+.section-two__benefit img {
+    /* height:3.75rem; */
+    width:100%;
+    max-width:3.75rem;
+    height:auto;
+    padding: 1.3rem 0;
+}
+
+@media screen and (min-width:768px) {
+    .section-two__benefit img {
+        max-width:6rem;
+    }
+}
+
+.section-two__benefit p {
+    padding-bottom:1.3rem;
+}
+
+.section-two__benefit-lc {
+    padding-bottom:4rem;
 }
