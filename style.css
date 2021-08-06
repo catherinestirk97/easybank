@@ -56,6 +56,7 @@ body {
     /* border:1px solid black; */
     display:flex;
     flex-direction:column;
+    overflow:hidden;
 }
 
 .section-one__images {
@@ -70,6 +71,8 @@ body {
 .phones {
     height:auto;
     width:100%;
+    margin: -120px 0 0 0;
+    z-index: -4;
 }
 
 .section-one__text {
