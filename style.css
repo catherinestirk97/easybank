@@ -103,7 +103,7 @@ span {
     /* border:1px solid black; */
 } 
 
-.section-one__text button {
+.ri-button {
     margin-top:1.2rem;
     padding: 12px 30px;
     border-radius:15px;
@@ -172,6 +172,7 @@ span {
 
 .section-three {
     background-color:var(--light-grey);
+    padding-bottom:3rem;
 }
 
 .section-three h2 {
@@ -226,4 +227,45 @@ span {
     font-size: 0.85em;
     font-weight: 400;
     padding-bottom:2rem;
+}
+
+.section-footer {
+    display:flex;
+    flex-direction:column;
+    /* align-items:center; */
+    text-align: center;
+    background-color:var(--dark-blue);
+}
+
+.footer-column-two a {
+    text-decoration:none;
+    color:white;
+    font-weight: 300;
+}
+
+.logo-white {
+    margin:2rem 0;
+}
+
+.social-icons {
+    margin-bottom:2rem;
+}
+
+.social-icons img {
+    padding: 0 0.3rem;
+}
+
+
+.footer-column-two li {
+    padding: 0.6rem;
+}
+
+.footer-column-three p {
+    margin-top:-2rem;
+    margin-bottom: 2rem;
+    color:var(--light-grey);
+}
+
+.logo-white {
+    filter: brightness(0) invert(1);
 }
