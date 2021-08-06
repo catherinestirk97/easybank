@@ -42,10 +42,26 @@ body {
     z-index:3;
 }
 
+@media screen and (min-width:768px){
+    .mobile-container {
+        justify-content: space-around;
+    }
+
+    .mobile-container img {
+        justify-self:center;
+    }
+}
+
 .hamburger-menu {
     height:0.7rem;
     width:1.4rem;
     align-self: center;
+}
+
+@media screen and (min-width:768px) {
+    .hamburger-menu, .hamburger-button {
+        display:none;
+    }
 }
 
 .mobile-container button {
@@ -58,11 +74,41 @@ body {
     display:none;
 }
 
-@media screen and (min-width:992px) {
-    .nav-links{
+.desktop-button {
+    display:none;
+}
+
+.links-container {
+    flex-direction:column;
+}
+
+@media screen and (min-width:768px) {
+    .nav-links {
+        display:flex;
+        justify-content:center;
+    }
+
+    .desktop-button {
         display:block;
+        padding: 12px 30px;
+        border-radius:15px;
+        border:none;
+        background-image: linear-gradient(to right, var(--lime-green) , var(--bright-cyan));
+        font-family: inherit;
+        color:white;
+    }
+
+    .hamburger-menu, .hamburger-button {
+        display:none;
+    }
+
+    .links-container {
+        align-self:center;
+        display:flex;
+        flex-direction:row;
     }
 }
+
 
 .active {
     display:block;
@@ -85,6 +131,13 @@ body {
 .nav-links li {
     padding:0.6rem 0;
     list-style:none;
+}
+
+@media screen and (min-width:768px){
+    .nav-links li {
+        padding:0 1rem;
+        padding-left: -1rem;
+    }
 }
 
 .section-one {
