@@ -289,7 +289,7 @@ span {
 
 @media screen and (min-width:768px) {
     .section-two__benefit img {
-        max-width:6rem;
+        max-width:4rem;
     }
 }
 
@@ -299,6 +299,33 @@ span {
 
 .section-two__benefit .section-two__benefit-lc {
     padding-bottom:4rem;
+}
+
+@media screen and (min-width:768px) {
+    .section-two__intro h2 {
+        padding-left:0;
+    }
+
+    .section-two__intro {
+        text-align:left;
+        width:60%;
+        padding:0 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .section-two__benefits{
+        flex-direction:row;
+        text-align:left;
+        padding-left:2rem;
+    }
+
+    .section-two__benefit p {
+        width:85%;
+    }
+
+    .section-two {
+        padding-bottom:3rem;
+    }
 }
 
 .section-three {
