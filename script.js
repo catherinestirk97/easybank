@@ -9,3 +9,12 @@ function toggleMenu(){
         links.classList.add("active");
     }
 }
+
+window.addEventListener('resize', fixHamburgerBug);
+
+function fixHamburgerBug(){
+    if(screen.width > 767) {
+        links.classList.remove("active");
+    }
+}
+
