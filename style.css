@@ -447,3 +447,30 @@ span {
 .logo-white {
     filter: brightness(0) invert(1);
 }
+
+@media screen and (min-width:768px){
+    .section-footer {
+        flex-direction:row;
+        justify-content: space-between;
+        align-items:center;
+        padding: 0 2rem;
+    }
+
+    .footer-column-two li {
+        list-style:none;
+    }
+
+    .footer-column-two {
+        padding: 1rem 0;
+    }
+
+    .footer-column-two-links-one, .footer-column-two-links-two {
+        display:flex;
+    }
+
+    .footer-column-three, .footer-column-one {
+        align-self:center;
+        padding-top:1rem;
+    }
+
+}
