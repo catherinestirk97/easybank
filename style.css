@@ -387,6 +387,26 @@ span {
     padding-bottom:2rem;
 }
 
+@media screen and (min-width:768px){
+    .section-three h2 {
+        text-align:left;
+        padding-bottom:2rem;
+    }
+
+    .section-three__container {
+        flex-direction:row;
+    }
+
+    .section-three-article-text p {
+        padding-bottom:0.8rem;
+    }
+
+    .section-three {
+        padding:0 2rem;
+        padding-bottom:3rem;
+    }
+}
+
 .section-footer {
     display:flex;
     flex-direction:column;
