@@ -49,6 +49,7 @@ body {
 
     .mobile-container img {
         justify-self:center;
+        align-self:center;
     }
 }
 
@@ -204,6 +205,44 @@ span {
     font-family: inherit;
     color:white;
     margin-bottom:4rem;
+}
+
+@media screen and (min-width:768px){
+    .section-one {
+        flex-direction:row;
+        align-items:center;
+        /* margin-bottom:-2rem;
+        overflow:hidden; */
+    }
+
+    .section-one__images {
+        order: 1;
+        background: url(/images/bg-intro-desktop.svg);
+    }
+
+    .section-one__text {
+        text-align:left;
+        /* border:1px solid black; */
+        padding:0 4rem;
+        width:60%;
+    }
+
+    .section-one button {
+        margin-bottom:3rem;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .section-one__text h1 {
+        font-size:3.5em;
+        padding-left:0;
+    }
+
+    .section-one__text p {
+        padding-right:2rem;
+    }
+
 }
 
 .section-two {
