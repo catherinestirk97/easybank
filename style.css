@@ -365,11 +365,12 @@ span {
     border-radius:10px;
 }
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     .section-three-article img {
         height:auto;
     }
-}
+} */
+
 
 .section-three-article-text {
     padding: 0px 25px;
